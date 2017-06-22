@@ -1,6 +1,11 @@
 \version "2.18.2"
 \include "english.ly"
 
+intro = { e8 g b e4. b4 | d8 f b e4. b4 }
+gallop = { b16 e e8 as16 d d8 as16 d d8 gs16 b b8 }
+firstChords = { <e g b e,>2 <b d f b,> | <e g b e,> <cs e gs cs,> }
+smallLead = {  b'16 e fs as gs as d' fs gs b d e fs as gs b' | }
+
 \score {
 	\new Staff {
 		\key b \minor
@@ -8,23 +13,17 @@
 		\numericTimeSignature
 		\time 4/4
 		\clef "bass"
-		b8 e e4 as8 d d4 | as8 d d4 gs8 b b4 |
-		b8 e e4 as8 d d4 | as8 d d4 gs8 b b4 |
-		b8 e e4 as8 d d4 | as8 d d4 gs8 b b4 |
-		b8 e e4 as8 d d4 | as8 d d4 gs8 b b4 |
-		<e g b e,>2 <b d f b,> | <e g b e> < cs e gs cs,> |
-		<e g b e,>2 <b d f b,> | <e g b e> < cs e gs cs,> |
-		<e g b e,>2 <b d f b,> | <e g b e> < cs e gs cs,> |
-		<e g b e,>2 <b d f b,> | <e g b e> < cs e gs cs,> |
-
-		d16 e fs as
-		gs as d' fs
-		gs b d e
-		fs as gs b' |
-		d16 e fs as
-		gs as d' fs
-		gs b d e
-		fs as gs b' |
+		\intro
+		\firstChords
+		\firstChords
+		\gallop
+		\gallop
+		\gallop
+		\gallop
+		\firstChords
+		\firstChords
+		\smallLead
+		\smallLead
 	}
 	\layout { }
 	\midi {
