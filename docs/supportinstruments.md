@@ -1,7 +1,7 @@
-### Lilypond's Supported Midi
+### Freepats, Supported Midi
 31. "Guitar Harmonics"
 
-### Lilypond's Unsupported Midi
+### Freepats, Unsupported Midi
 
 28. #"Electric Guitar (Clean)" % Distortion Guitar
 30. #"Overdriven Guitar" % Distortion Guitar
